@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* for testing layout purpose */
+/* * {
+  border: 1px solid hsla(0, 76%, 33%, 0.705);
+  box-sizing: border-box;
+} */
