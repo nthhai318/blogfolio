@@ -1,23 +1,6 @@
+import BlogInput from "../../components/BlogInput";
+
 const CreateBlog = () => {
-  // // Solution from Stackoverflow - need to revise for typescript
-  // const tx = document.getElementsByTagName("textarea");
-  // for (let i = 0; i < tx.length; i++) {
-  //   if (tx[i]) {
-  //     tx[i].setAttribute(
-  //       "style",
-  //       "height:" + tx[i].scrollHeight + "px;overflow-y:hidden;"
-  //     );
-  //     tx[i].addEventListener("input", OnInput, false);
-  //   }
-  // }
-
-  // function OnInput() {
-  //   this.style.height = 0;
-  //   this.style.height = this.scrollHeight + "px";
-  // }
-
-  // //end of Stackoverflow code
-
   return (
     <div className="mx-auto w-[50rem] border-[1px] border-solid border-stone-300">
       <h1 className="mx-auto text-center text-[2rem] uppercase ">
@@ -50,6 +33,7 @@ const CreateBlog = () => {
             required
             rows={10}
           />
+          <BlogInput row={10} />
         </div>
         <button className="mx-auto block rounded-md bg-pink-700 px-10 py-3 font-semibold text-white no-underline transition hover:bg-white/20">
           Submit your blog
