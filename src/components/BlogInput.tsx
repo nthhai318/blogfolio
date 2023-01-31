@@ -19,6 +19,7 @@ const useAutosizeTextArea = (
 
 type InputProp = {
   row?: number;
+  style?: string;
 };
 
 const BlogInput = (props: InputProp) => {
@@ -34,7 +35,7 @@ const BlogInput = (props: InputProp) => {
   };
   return (
     <textarea
-      className="text-black"
+      className={props.style ? `${props.style} text-black ` : `text-black`}
       onChange={handleChange}
       placeholder="What did you like or dislike?"
       ref={textAreaRef}
