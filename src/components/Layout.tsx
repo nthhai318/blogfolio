@@ -3,7 +3,7 @@ import Nav from "./Nav";
 
 const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
-    <div className="min-h-screen bg-[hsl(266,90%,12%)]">
+    <div className="min-h-screen bg-[hsl(266,90%,12%)] text-white">
       <Nav />
       {children}
     </div>
